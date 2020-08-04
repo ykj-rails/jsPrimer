@@ -1,0 +1,29 @@
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>free.js</title>
+    </head>
+
+    <body>
+        <h1>fetch</h1>
+        <script>
+            import axios from "axios";
+            let url = "https://jsonplaceholder.typicode.com/userss";
+            export default {
+                asyncData({ params, error }) {
+                    return axios
+                        .get(url)
+                        .then(res => {
+                            return { users: res.data };
+                        })
+                        .catch(e => {
+                            // console.log(e.response.status);
+                            error({ users: e.response.status, message: e.message });
+                        });
+                }
+            };
+        </script>
+    </body>
+
+</html>
