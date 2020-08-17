@@ -7,6 +7,8 @@ https://jsprimer.net/intro/
 - ./ajaxapp
 - ./nodecli
 - ./todoapp
+- ./webapi
+- https://ykj-rails.github.io/jsPrimer/webapi/dist/index.html
 
 ## other
 
