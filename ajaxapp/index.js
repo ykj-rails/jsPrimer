@@ -41,3 +41,22 @@ const displayView = (view) => {
   const result = document.getElementById('result')
   result.innerHTML = view
 }
+
+// const sampleFetch = () => {
+//   fetch(
+//     URL
+//   ).then((res) => {
+//     console.log('OK')
+//   }).catch((error) => {
+//     console.log('error')
+//   }).finaly(() => {
+//     console.log('finaly')
+//   })
+// }
+
+// const btn = $('#btn')
+// const test = $('#test')
+
+// btn.on('click', function() {
+//   test.text('デザイン')
+// })
